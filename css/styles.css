@@ -1,0 +1,96 @@
+/* 
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+font-family: 'Karla', sans-serif;
+- Weights: 400, 700 */
+:root {
+  --primary-cyan: hsl(179, 62%, 43%);
+  --primary-bright-yellow: hsl(71, 73%, 54%);
+  --neutral-light-gray: hsl(204, 43%, 93%);
+  --neutral-grayish-blue: hsl(218, 22%, 67%);
+}
+body {
+  background-color: var(--neutral-grayish-blue);
+}
+.component {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  max-width: 700px;
+  margin: 10% auto;
+  padding: 0;
+  border: 3px solid red;
+  border-radius: 10px;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: white;
+}
+.price-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  color: white;
+}
+.price-area button {
+  background-color: var(--primary-bright-yellow);
+  color: white;
+  padding: 15px 38%;
+  margin: 20px auto;
+  border: o solid var(--primary-bright-yellow);
+  border-radius: 5px;
+}
+.container {
+  flex: 1;
+  padding: 40px;
+  margin: 0;
+}
+.join {
+  color: var(--primary-cyan);
+}
+.guarantee {
+  color: var(--primary-bright-yellow);
+}
+.subscription {
+  background-color: var(--primary-cyan);
+}
+.whyus {
+  background-color: hsl(179, 62%, 46%);
+}
+.whyus ul {
+  padding: 0;
+}
+.whyus li {
+  padding: 0;
+  list-style: none;
+}
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
