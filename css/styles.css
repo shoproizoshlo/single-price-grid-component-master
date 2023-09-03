@@ -28,7 +28,7 @@ font-family: 'Karla', sans-serif;
   --neutral-grayish-blue: hsl(218, 22%, 67%);
 }
 body {
-  background-color: var(--neutral-grayish-blue);
+  background-color: var(--neutral-light-gray);
 }
 .component {
   display: flex;
@@ -36,45 +36,90 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
-  max-width: 700px;
+  max-width: 650px;
   margin: 10% auto;
   padding: 0;
-  border: 3px solid red;
   border-radius: 10px;
   font-family: "Karla", sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 16px;
   background-color: white;
+  overflow: hidden;
+  box-shadow: 1px 13px 17px rgba(110, 110, 110, 0.2);
+}
+
+.about-area {
+  flex: 1;
+  padding: 20px 40px 0 40px;
+  margin: 0;
+}
+.subscription,
+.whyus {
+  flex: 1;
+  padding: 30px 35px;
+  margin: 0;
+}
+.text {
+  margin: 0;
+  padding-right: 10%;
+  line-height: 25px;
+  color: var(--neutral-grayish-blue);
 }
 .price-area {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-start;
   color: white;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: stretch;
 }
 .price-area button {
   background-color: var(--primary-bright-yellow);
   color: white;
-  padding: 15px 38%;
+  padding: 15px 37%;
   margin: 20px auto;
   border: o solid var(--primary-bright-yellow);
   border-radius: 5px;
-}
-.container {
-  flex: 1;
-  padding: 40px;
-  margin: 0;
+  font-size: 17px;
+  box-shadow: 1px 13px 17px rgba(110, 110, 110, 0.2);
 }
 .join {
   color: var(--primary-cyan);
+  font-size: 23px;
+  font-weight: 700;
+  margin: 0;
 }
 .guarantee {
   color: var(--primary-bright-yellow);
+  font-size: 17px;
+  font-weight: 700;
+  margin: 30px 0 20px 0;
 }
 .subscription {
   background-color: var(--primary-cyan);
+}
+
+.monthly,
+.whyus p {
+  font-weight: 400;
+  font-size: 20px;
+}
+.pice-dollar {
+  display: flex;
+  align-items: center;
+}
+.period {
+  margin: 0;
+  padding-left: 10px;
+}
+.dollar {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 30px;
+}
+.access {
+  font-size: 17px;
 }
 .whyus {
   background-color: hsl(179, 62%, 46%);
@@ -85,6 +130,7 @@ body {
 .whyus li {
   padding: 0;
   list-style: none;
+  line-height: 23px;
 }
 /* footer */
 .attribution {
@@ -93,4 +139,15 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 600px) {
+  .component {
+    margin: 15% 3%;
+  }
+  .about-area {
+    padding: 20px;
+  }
+  .text {
+    padding-right: 0;
+  }
 }
