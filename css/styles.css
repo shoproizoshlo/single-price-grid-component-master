@@ -1,26 +1,3 @@
-/* 
-## Colors
-
-### Primary
-
-- Cyan: hsl(179, 62%, 43%)
-- Bright Yellow: hsl(71, 73%, 54%)
-
-### Neutral
-
-- Light Gray: hsl(204, 43%, 93%)
-- Grayish Blue: hsl(218, 22%, 67%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 16px
-
-### Font
-
-font-family: 'Karla', sans-serif;
-- Weights: 400, 700 */
 :root {
   --primary-cyan: hsl(179, 62%, 43%);
   --primary-bright-yellow: hsl(71, 73%, 54%);
@@ -37,7 +14,7 @@ body {
   justify-content: center;
   align-content: flex-start;
   max-width: 650px;
-  margin: 10% auto;
+  margin: 10% auto 1% auto;
   padding: 0;
   border-radius: 10px;
   font-family: "Karla", sans-serif;
